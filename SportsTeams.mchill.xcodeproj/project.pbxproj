@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		3451596C299689FD002C520F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3451596B299689FD002C520F /* AppDelegate.swift */; };
 		3451596E299689FD002C520F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3451596D299689FD002C520F /* SceneDelegate.swift */; };
-		34515970299689FD002C520F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3451596F299689FD002C520F /* ViewController.swift */; };
 		34515973299689FD002C520F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34515971299689FD002C520F /* Main.storyboard */; };
 		34515975299689FE002C520F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34515974299689FE002C520F /* Assets.xcassets */; };
 		34515978299689FE002C520F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34515976299689FE002C520F /* LaunchScreen.storyboard */; };
+		3451598129968D71002C520F /* SportsTeamTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3451598029968D71002C520F /* SportsTeamTableViewController.swift */; };
+		3451598329968D9D002C520F /* TeamDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3451598229968D9D002C520F /* TeamDetailViewController.swift */; };
+		3451598729968E00002C520F /* SportTeamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3451598629968E00002C520F /* SportTeamTableViewCell.swift */; };
+		3451598929968EAC002C520F /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3451598829968EAC002C520F /* Team.swift */; };
+		3451598C29968ED6002C520F /* Model Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3451598B29968ED6002C520F /* Model Controller.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		34515968299689FD002C520F /* SportsTeams.mchill.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SportsTeams.mchill.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3451596B299689FD002C520F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3451596D299689FD002C520F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3451596F299689FD002C520F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		34515972299689FD002C520F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		34515974299689FE002C520F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		34515977299689FE002C520F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		34515979299689FE002C520F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3451598029968D71002C520F /* SportsTeamTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsTeamTableViewController.swift; sourceTree = "<group>"; };
+		3451598229968D9D002C520F /* TeamDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDetailViewController.swift; sourceTree = "<group>"; };
+		3451598629968E00002C520F /* SportTeamTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportTeamTableViewCell.swift; sourceTree = "<group>"; };
+		3451598829968EAC002C520F /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		3451598B29968ED6002C520F /* Model Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Model Controller.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,59 @@
 		3451596A299689FD002C520F /* SportsTeams.mchill */ = {
 			isa = PBXGroup;
 			children = (
-				3451596B299689FD002C520F /* AppDelegate.swift */,
-				3451596D299689FD002C520F /* SceneDelegate.swift */,
-				3451596F299689FD002C520F /* ViewController.swift */,
+				3451597F29968C56002C520F /* Supporting Files */,
 				34515971299689FD002C520F /* Main.storyboard */,
-				34515974299689FE002C520F /* Assets.xcassets */,
 				34515976299689FE002C520F /* LaunchScreen.storyboard */,
-				34515979299689FE002C520F /* Info.plist */,
+				3451598429968DAA002C520F /* View Controllers */,
+				3451598529968DBF002C520F /* Cell View Controller */,
+				3451598A29968EB5002C520F /* Model */,
+				3451598D29968EE5002C520F /* Model Controller */,
 			);
 			path = SportsTeams.mchill;
+			sourceTree = "<group>";
+		};
+		3451597F29968C56002C520F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3451596B299689FD002C520F /* AppDelegate.swift */,
+				3451596D299689FD002C520F /* SceneDelegate.swift */,
+				34515974299689FE002C520F /* Assets.xcassets */,
+				34515979299689FE002C520F /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3451598429968DAA002C520F /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3451598229968D9D002C520F /* TeamDetailViewController.swift */,
+				3451598029968D71002C520F /* SportsTeamTableViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		3451598529968DBF002C520F /* Cell View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3451598629968E00002C520F /* SportTeamTableViewCell.swift */,
+			);
+			path = "Cell View Controller";
+			sourceTree = "<group>";
+		};
+		3451598A29968EB5002C520F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3451598829968EAC002C520F /* Team.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3451598D29968EE5002C520F /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3451598B29968ED6002C520F /* Model Controller.swift */,
+			);
+			path = "Model Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +190,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34515970299689FD002C520F /* ViewController.swift in Sources */,
+				3451598929968EAC002C520F /* Team.swift in Sources */,
+				3451598729968E00002C520F /* SportTeamTableViewCell.swift in Sources */,
 				3451596C299689FD002C520F /* AppDelegate.swift in Sources */,
+				3451598C29968ED6002C520F /* Model Controller.swift in Sources */,
 				3451596E299689FD002C520F /* SceneDelegate.swift in Sources */,
+				3451598329968D9D002C520F /* TeamDetailViewController.swift in Sources */,
+				3451598129968D71002C520F /* SportsTeamTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +344,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SportsTeams.mchill/Info.plist;
+				INFOPLIST_FILE = "SportsTeams.mchill/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -315,7 +371,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SportsTeams.mchill/Info.plist;
+				INFOPLIST_FILE = "SportsTeams.mchill/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
