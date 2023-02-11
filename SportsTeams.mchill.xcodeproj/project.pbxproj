@@ -16,7 +16,7 @@
 		3451598329968D9D002C520F /* TeamDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3451598229968D9D002C520F /* TeamDetailViewController.swift */; };
 		3451598729968E00002C520F /* SportTeamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3451598629968E00002C520F /* SportTeamTableViewCell.swift */; };
 		3451598929968EAC002C520F /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3451598829968EAC002C520F /* Team.swift */; };
-		3451598C29968ED6002C520F /* Model Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3451598B29968ED6002C520F /* Model Controller.swift */; };
+		3451598F29980968002C520F /* TeamController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3451598E29980968002C520F /* TeamController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +31,7 @@
 		3451598229968D9D002C520F /* TeamDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDetailViewController.swift; sourceTree = "<group>"; };
 		3451598629968E00002C520F /* SportTeamTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportTeamTableViewCell.swift; sourceTree = "<group>"; };
 		3451598829968EAC002C520F /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
-		3451598B29968ED6002C520F /* Model Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Model Controller.swift"; sourceTree = "<group>"; };
+		3451598E29980968002C520F /* TeamController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,7 +114,7 @@
 		3451598D29968EE5002C520F /* Model Controller */ = {
 			isa = PBXGroup;
 			children = (
-				3451598B29968ED6002C520F /* Model Controller.swift */,
+				3451598E29980968002C520F /* TeamController.swift */,
 			);
 			path = "Model Controller";
 			sourceTree = "<group>";
@@ -192,8 +192,8 @@
 			files = (
 				3451598929968EAC002C520F /* Team.swift in Sources */,
 				3451598729968E00002C520F /* SportTeamTableViewCell.swift in Sources */,
+				3451598F29980968002C520F /* TeamController.swift in Sources */,
 				3451596C299689FD002C520F /* AppDelegate.swift in Sources */,
-				3451598C29968ED6002C520F /* Model Controller.swift in Sources */,
 				3451596E299689FD002C520F /* SceneDelegate.swift in Sources */,
 				3451598329968D9D002C520F /* TeamDetailViewController.swift in Sources */,
 				3451598129968D71002C520F /* SportsTeamTableViewController.swift in Sources */,
