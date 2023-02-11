@@ -59,6 +59,9 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="playerCountLabel" destination="ITG-Hw-yex" id="Fit-n4-Xz3"/>
+                                    <outlet property="teamNameLabel" destination="dta-ot-Qny" id="ovt-Fo-til"/>
+                                    <outlet property="teamRankLabel" destination="HLF-Ru-CMD" id="Hng-qo-fha"/>
                                     <segue destination="m4w-Mh-MJJ" kind="show" identifier="teamCell" id="OkH-PF-4yg"/>
                                 </connections>
                             </tableViewCell>

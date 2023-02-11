@@ -9,15 +9,13 @@ import UIKit
 
 class SportTeamTableViewCell: UITableViewCell {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
+    @IBOutlet weak var teamRankLabel: UILabel!
+    @IBOutlet weak var teamNameLabel: UILabel!
+    @IBOutlet weak var playerCountLabel: UILabel!
+    
+    func updateView(team: Team) {
+        teamNameLabel.text = team.teamName
+        teamRankLabel.text = "#\(team.teamRank)"
+        playerCountLabel.text = "\(team.playercount)"
+    }    
 }

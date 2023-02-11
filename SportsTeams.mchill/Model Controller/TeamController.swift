@@ -16,7 +16,7 @@ class TeamController {
     // MARK: - CRUD Functions
     // My Create team func
     func createTeam(name: String, rank: Int, players: Int) {
-        var newTeam = Team(teamName: name, teamRank: rank, playercount: players)
+        let newTeam = Team(teamName: name, teamRank: rank, playercount: players)
         teams.append(newTeam)
     }
     // Updating the team if they lose a player or they drop/gain rank. Or they need to change their name because they were the rebels/indians/chiefs

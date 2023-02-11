@@ -20,14 +20,15 @@ class SportsTeamTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return TeamController.sharedInstance.teams.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "teamCell", for: indexPath)
+       guard let cell = tableView.dequeueReusableCell(withIdentifier: "teamCell", for: indexPath) as? SportTeamTableViewCell else {return UITableViewCell()}
 
-        // Configure the cell...
+        cell.updateView(team: TeamController.sharedInstance.teams[indexPath.row])
+        
 
         return cell
     }
