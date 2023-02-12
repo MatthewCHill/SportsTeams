@@ -150,6 +150,9 @@
                                         <buttonConfiguration key="configuration" style="filled" title="Clear">
                                             <color key="baseForegroundColor" systemColor="secondarySystemBackgroundColor"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="clearButtonTapped:" destination="m4w-Mh-MJJ" eventType="touchUpInside" id="GyR-l6-hrM"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mct-l2-tbZ">
                                         <rect key="frame" x="199" y="0.0" width="194" height="34.333333333333336"/>
@@ -157,6 +160,9 @@
                                         <color key="tintColor" systemColor="systemRedColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Delete"/>
+                                        <connections>
+                                            <action selector="deleteButtonTapped:" destination="m4w-Mh-MJJ" eventType="touchUpInside" id="fJT-Ee-SwX"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -176,8 +182,17 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="aBj-yC-WCF">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="gjW-rB-6jN"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="gjW-rB-6jN">
+                            <connections>
+                                <action selector="saveButtonTapped:" destination="m4w-Mh-MJJ" id="U9f-4G-uUO"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="playerCountTextField" destination="42a-01-LUi" id="Hfn-Ap-kks"/>
+                        <outlet property="teamNameTextField" destination="mdq-2R-yhF" id="c6t-7Z-gc3"/>
+                        <outlet property="teamRankTextField" destination="bbY-4E-Hjr" id="Dh3-VZ-tfD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VBj-9V-kTH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
