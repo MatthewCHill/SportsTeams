@@ -28,6 +28,14 @@ class TeamDetailViewController: UIViewController {
     }
     
     @IBAction func deleteButtonTapped(_ sender: Any) {
+        
+        if let team = team {
+            TeamController.sharedInstance.deleteTeam(teamToDelete: team)
+        } else {
+            return
+        }
+        navigationController?.popViewController(animated: true)
+
     }
     
     @IBAction func saveButtonTapped(_ sender: Any) {
