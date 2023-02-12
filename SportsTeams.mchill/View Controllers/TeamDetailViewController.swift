@@ -31,6 +31,16 @@ class TeamDetailViewController: UIViewController {
     }
     
     @IBAction func saveButtonTapped(_ sender: Any) {
+        guard let teamName = teamNameTextField.text,
+              let teamRank = teamRankTextField.text,
+              let playerCount = playerCountTextField.text else {return}
+        
+        if let team = team {
+            TeamController.sharedInstance.updateTeam(teamToupdate: team, name: teamName, rank: Int(teamRank) ?? 0, players: Int(playerCount) ?? 0)
+        } else {
+            TeamController.sharedInstance.createTeam(name: teamName, rank: Int(teamRank) ?? 0, players: Int(playerCount) ?? 0)
+        }
+        navigationController?.popViewController(animated: true)
     }
     
     

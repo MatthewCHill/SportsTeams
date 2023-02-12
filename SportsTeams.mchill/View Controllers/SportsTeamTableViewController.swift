@@ -11,7 +11,11 @@ class SportsTeamTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tableView.reloadData()
     }
 
     // MARK: - Table view data source
@@ -37,7 +41,6 @@ class SportsTeamTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             let teamToDelete = TeamController.sharedInstance.teams[indexPath.row]
-            tableView.deleteRows(at: [indexPath], with: .fade)
             TeamController.sharedInstance.deleteTeam(teamToDelete: teamToDelete)
             tableView.deleteRows(at: [indexPath], with: .fade)
         }    
