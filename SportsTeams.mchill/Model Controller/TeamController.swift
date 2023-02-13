@@ -30,7 +30,4 @@ class TeamController {
         guard let index = teams.firstIndex(of: teamToDelete) else {return}
         teams.remove(at: index)
     }
-    
-    
-    
-}
+} //end of class

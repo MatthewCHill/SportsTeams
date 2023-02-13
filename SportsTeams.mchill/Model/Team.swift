@@ -17,7 +17,7 @@ class Team {
         self.teamRank = teamRank
         self.playercount = playercount
     }
-}
+} // end of class
 extension Team: Equatable {
     static func == (lhs: Team, rhs: Team) -> Bool {
         return lhs.teamRank == rhs.teamRank &&

@@ -16,6 +16,6 @@ class SportTeamTableViewCell: UITableViewCell {
     func updateView(team: Team) {
         teamNameLabel.text = team.teamName
         teamRankLabel.text = "#\(team.teamRank)"
-        playerCountLabel.text = "\(team.playercount)"
+        playerCountLabel.text = "Player Count: \(team.playercount)"
     }    
 }

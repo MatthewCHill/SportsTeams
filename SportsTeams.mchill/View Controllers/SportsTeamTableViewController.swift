@@ -16,6 +16,8 @@ class SportsTeamTableViewController: UITableViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         tableView.reloadData()
+        navigationItem.backBarButtonItem = UIBarButtonItem(
+            title: "Sports Team", style: .plain, target: nil, action: nil)
     }
 
     // MARK: - Table view data source
@@ -59,9 +61,5 @@ class SportsTeamTableViewController: UITableViewController {
                 }
             }
         }
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
     }
-    
-
 }

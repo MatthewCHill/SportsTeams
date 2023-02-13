@@ -17,6 +17,7 @@ class TeamDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         updateView()
+        
         // Do any additional setup after loading the view.
     }
     
@@ -57,7 +58,7 @@ class TeamDetailViewController: UIViewController {
     func updateView() {
         guard let team = team else {return}
         teamNameTextField.text = team.teamName
-        teamNameTextField.text = "\(team.teamRank)"
+        teamRankTextField.text = "\(team.teamRank)"
         playerCountTextField.text = "\(team.playercount)"
     }
     func clearView() {

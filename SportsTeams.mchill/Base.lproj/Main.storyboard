@@ -3,8 +3,8 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -25,9 +25,8 @@
                                     <rect key="frame" x="0.0" y="0.0" width="393" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rank" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HLF-Ru-CMD">
-                                            <rect key="frame" x="2" y="34" width="389" height="32"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rank" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HLF-Ru-CMD">
+                                            <rect key="frame" x="345" y="9.9999999999999982" width="38" height="20.333333333333329"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -37,7 +36,7 @@
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TeamName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dta-ot-Qny">
                                                     <rect key="frame" x="0.0" y="0.0" width="389" height="48"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -50,10 +49,12 @@
                                             </subviews>
                                         </stackView>
                                     </subviews>
-                                    <color key="backgroundColor" name="AccentColor"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     <constraints>
                                         <constraint firstItem="Ru1-49-tfr" firstAttribute="leading" secondItem="ct0-tv-74v" secondAttribute="leading" constant="2" id="Icz-ye-jcq"/>
                                         <constraint firstItem="Ru1-49-tfr" firstAttribute="top" secondItem="ct0-tv-74v" secondAttribute="top" constant="2" id="NVC-0E-CY9"/>
+                                        <constraint firstItem="HLF-Ru-CMD" firstAttribute="top" secondItem="ct0-tv-74v" secondAttribute="top" constant="10" id="Na4-r5-2dF"/>
+                                        <constraint firstAttribute="trailing" secondItem="HLF-Ru-CMD" secondAttribute="trailing" constant="10" id="Yzf-dz-5TK"/>
                                         <constraint firstAttribute="trailing" secondItem="Ru1-49-tfr" secondAttribute="trailing" constant="2" id="hW2-Ol-XYT"/>
                                         <constraint firstAttribute="bottom" secondItem="Ru1-49-tfr" secondAttribute="bottom" constant="2" id="nSX-1Z-5Zh"/>
                                     </constraints>
@@ -139,38 +140,44 @@
                                     </textField>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="3rm-Ak-rzN">
-                                <rect key="frame" x="0.0" y="255.00000000000003" width="393" height="34.333333333333343"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3rm-Ak-rzN">
+                                <rect key="frame" x="10" y="255.00000000000003" width="373" height="34.333333333333343"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tup-JB-ocG">
-                                        <rect key="frame" x="0.0" y="0.0" width="194" height="34.333333333333336"/>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tup-JB-ocG">
+                                        <rect key="frame" x="0.0" y="0.0" width="178.66666666666666" height="34.333333333333336"/>
                                         <color key="backgroundColor" systemColor="systemGray2Color"/>
                                         <color key="tintColor" systemColor="systemGray2Color"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Clear">
                                             <color key="baseForegroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                            <color key="baseBackgroundColor" systemColor="systemGray3Color"/>
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="clearButtonTapped:" destination="m4w-Mh-MJJ" eventType="touchUpInside" id="GyR-l6-hrM"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mct-l2-tbZ">
-                                        <rect key="frame" x="199" y="0.0" width="194" height="34.333333333333336"/>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mct-l2-tbZ">
+                                        <rect key="frame" x="186.66666666666663" y="0.0" width="186.33333333333337" height="34.333333333333336"/>
                                         <color key="backgroundColor" systemColor="systemRedColor"/>
                                         <color key="tintColor" systemColor="systemRedColor"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Delete"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Delete">
+                                            <color key="baseBackgroundColor" systemColor="systemRedColor"/>
+                                        </buttonConfiguration>
                                         <connections>
                                             <action selector="deleteButtonTapped:" destination="m4w-Mh-MJJ" eventType="touchUpInside" id="fJT-Ee-SwX"/>
                                         </connections>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="mct-l2-tbZ" secondAttribute="trailing" constant="10" id="GaW-Ff-uML"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bpY-9c-bxg"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="bpY-9c-bxg" firstAttribute="trailing" secondItem="3rm-Ak-rzN" secondAttribute="trailing" id="0MX-o1-qUY"/>
+                            <constraint firstItem="bpY-9c-bxg" firstAttribute="trailing" secondItem="3rm-Ak-rzN" secondAttribute="trailing" constant="10" id="0MX-o1-qUY"/>
                             <constraint firstItem="Pv6-jt-9Nm" firstAttribute="leading" secondItem="bpY-9c-bxg" secondAttribute="leading" constant="10" id="K2B-hV-jWO"/>
                             <constraint firstItem="lco-N7-f3g" firstAttribute="leading" secondItem="bpY-9c-bxg" secondAttribute="leading" constant="10" id="Lbv-gO-QzE"/>
                             <constraint firstItem="Pv6-jt-9Nm" firstAttribute="top" secondItem="bpY-9c-bxg" secondAttribute="top" constant="20" id="YhJ-0b-UeJ"/>
@@ -178,7 +185,7 @@
                             <constraint firstItem="hdP-mE-5rS" firstAttribute="leading" secondItem="bpY-9c-bxg" secondAttribute="leading" constant="10" id="hqY-PH-dVD"/>
                             <constraint firstItem="3rm-Ak-rzN" firstAttribute="top" secondItem="lco-N7-f3g" secondAttribute="bottom" constant="10" id="lhc-re-rRv"/>
                             <constraint firstItem="hdP-mE-5rS" firstAttribute="top" secondItem="Pv6-jt-9Nm" secondAttribute="bottom" constant="10" id="vhZ-7s-0c0"/>
-                            <constraint firstItem="3rm-Ak-rzN" firstAttribute="leading" secondItem="bpY-9c-bxg" secondAttribute="leading" id="w11-tp-7XQ"/>
+                            <constraint firstItem="3rm-Ak-rzN" firstAttribute="leading" secondItem="bpY-9c-bxg" secondAttribute="leading" constant="10" id="w11-tp-7XQ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="aBj-yC-WCF">
@@ -221,9 +228,6 @@
         <segue reference="1YB-W0-75Y"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <namedColor name="AccentColor">
-            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <systemColor name="secondarySystemBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
@@ -232,6 +236,9 @@
         </systemColor>
         <systemColor name="systemGray2Color">
             <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
